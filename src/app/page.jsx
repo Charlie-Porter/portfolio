@@ -4,13 +4,13 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
-        <h1 className={styles.title}>Hi, I 'm <b>Charlie</b>
+        <h1 className={styles.title}>Hi, I &aposm <b>Charlie</b>
           <span className={styles.profileImage}>
             <img src="/about.png" alt="Profile Picture" />
           </span>
         </h1>
         <p className={styles.desc}>
-          I'm an full stack software developer from Northern Ireland. Highly flexible and self-sufficient. Able to overcome any obstacle. 🐙
+          I &aposm an full stack software developer from Northern Ireland. Highly flexible and self-sufficient. Able to overcome any obstacle. 🐙
         </p>
         <div className={styles.buttons}>
           <a className={styles.button} href="https://github.com/Charlie-Porter">

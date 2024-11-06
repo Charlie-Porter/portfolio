@@ -11,8 +11,8 @@ const ContactPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.text}>
-        <h1>Let's connect 🗨️</h1>
-        <p>If you want to know more about me or my work, or if you would just like to say hello, send me a message. I'd love to hear from you 📨</p>
+        <h1>Let &aposs connect 🗨️</h1>
+        <p>If you want to know more about me or my work, or if you would just like to say hello, send me a message. I &aposd love to hear from you 📨</p>
       </div>
       <div className={styles.formContainer}>
         <form action="" className={styles.form}>
