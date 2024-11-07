@@ -1,0 +1,51 @@
+.container {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.postLink {
+  display: block;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #2d3748;
+  background-color: var(--bgSoft);
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.postLink:hover {
+  background-color: var(--hover);
+  transform: scale(1.02);
+}
+
+.postDate {
+  font-size: 0.875rem;
+  color: #a0aec0;
+  margin-bottom: 0.25rem;
+}
+
+.postTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #63b3ed;
+  /* Light blue color */
+  margin-top: 0.5rem;
+}
+
+.postTitle:hover {
+  text-decoration: underline;
+}
+
+.postDescription {
+  color: #e2e8f0;
+  /* Light gray for better readability */
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* Truncate to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,6 +1,14 @@
-const BlogPage = () => {
-  return (
-    <div>BlogPage</div>)
+import { BlogPosts } from '../../../components/posts/posts';
+
+export const metadata = {
+  title: 'Blog',
+  description: 'Read my blog.',
 }
 
-export default BlogPage
+export default function Page() {
+  return (
+    <section>
+      <BlogPosts />
+    </section>
+  )
+}

@@ -1,0 +1,29 @@
+---
+title: "Github Pages: Next.js with Workflow and OAuth"
+publishedAt: "2024-04-09"
+summary: "How to create a Next.js static GitHub Pages website"
+---
+
+[GitHub Repository Example](https://github.com/DaveAldon/Next.js-and-GitHub-Pages-Example)
+
+## Step 4: Images
+
+If you're using images from the `public` folder and serving them with Next.js's `<Image />` component, they won't work out of the box with static site generation. This is because there's no automatic handling of path prefixes for images.
+
+Next.js provides a way to automatically prepend assets like `.css` files with your GitHub repository name, but this does not apply to images served by the Next.js `<Image />` component. To work around this limitation, you need to prefix the path manually. Here’s a simple approach:
+
+### Setting Up a Prefix
+
+In the `utils` folder, create a `prefix.ts` file:
+
+```typescript
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
+export { prefix };
+```
+
+```typescript
+
+<Image src={`${prefix}/vercel.svg`} alt="Vercel Logo" width={72} height={16} />
+
+```
