@@ -7,12 +7,8 @@ const Home = () => {
       <div className={styles.textContainer}>
         <h1 className={styles.title}>Hi, I &aposm <b>Charlie</b>
           <span className={styles.profileImage}>
-            <Image
-              src="/about.png" // This will automatically respect the basePath
-              alt="Profile Picture"
-              width={75}
-              height={75}
-            />
+
+            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/about.png`} alt="Profile Picture" />
           </span>
         </h1>
         <p className={styles.desc}>
