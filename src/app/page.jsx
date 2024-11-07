@@ -7,14 +7,12 @@ const Home = () => {
       <div className={styles.textContainer}>
         <h1 className={styles.title}>Hi, I &aposm <b>Charlie</b>
           <span className={styles.profileImage}>
-
-            <Image
-              src="/about.png"  // Automatically respects basePath and assetPrefix
+            <img src="/about.png"
               alt="Profile Picture"
-              width={200}       // Specify width
-              height={200}      // Specify height
+              width={200} height={200}
               unoptimized={true}
-            />          </span>
+            />
+          </span>
         </h1>
         <p className={styles.desc}>
           I &aposm an full stack software developer from Northern Ireland. Highly flexible and self-sufficient. Able to overcome any obstacle. 🐙
