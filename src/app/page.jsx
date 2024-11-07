@@ -13,6 +13,7 @@ const Home = () => {
               alt="Profile Picture"
               width={200}       // Specify width
               height={200}      // Specify height
+              unoptimized={true}
             />          </span>
         </h1>
         <p className={styles.desc}>
