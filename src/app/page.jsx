@@ -1,4 +1,5 @@
 import styles from './home.module.css'
+import Image from 'next/image';
 
 const Home = () => {
   return (
@@ -6,7 +7,12 @@ const Home = () => {
       <div className={styles.textContainer}>
         <h1 className={styles.title}>Hi, I &aposm <b>Charlie</b>
           <span className={styles.profileImage}>
-            <img src="/about.png" alt="Profile Picture" />
+            <Image
+              src="/about.png" // This will automatically respect the basePath
+              alt="Profile Picture"
+              width={75}
+              height={75}
+            />
           </span>
         </h1>
         <p className={styles.desc}>
