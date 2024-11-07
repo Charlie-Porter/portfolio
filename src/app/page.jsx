@@ -1,5 +1,6 @@
 import styles from './home.module.css'
 import Image from 'next/image';
+import { prefix } from './utils/prefix';
 
 const Home = () => {
   return (
@@ -7,7 +8,7 @@ const Home = () => {
       <div className={styles.textContainer}>
         <h1 className={styles.title}>Hi, I &aposm <b>Charlie</b>
           <span className={styles.profileImage}>
-            <img src="/about.png"
+            <Image src={`${prefix}/about.png`}
               alt="Profile Picture"
               width={200} height={200}
               unoptimized={true}
