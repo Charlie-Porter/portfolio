@@ -8,8 +8,12 @@ const Home = () => {
         <h1 className={styles.title}>Hi, I &aposm <b>Charlie</b>
           <span className={styles.profileImage}>
 
-            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/about.png`} alt="Profile Picture" />
-          </span>
+            <Image
+              src="/about.png"  // Automatically respects basePath and assetPrefix
+              alt="Profile Picture"
+              width={200}       // Specify width
+              height={200}      // Specify height
+            />          </span>
         </h1>
         <p className={styles.desc}>
           I &aposm an full stack software developer from Northern Ireland. Highly flexible and self-sufficient. Able to overcome any obstacle. 🐙
