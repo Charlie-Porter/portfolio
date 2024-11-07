@@ -8,7 +8,7 @@ const Home = () => {
       <div className={styles.textContainer}>
         <h1 className={styles.title}>Hi, I&apos;m <b>Charlie</b>
           <span className={styles.profileImage}>
-            <Image src={`${prefix}/about.png`}
+            <Image src={`${prefix}/me.png`}
               alt="Profile Picture"
               width={200} height={200}
               unoptimized={true}
