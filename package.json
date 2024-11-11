@@ -13,9 +13,7 @@
   },
   "dependencies": {
     "install": "^0.13.0",
-    "logging-service": "^1.0.1",
     "next": "^15.0.3",
-    "next-auth": "^5.0.0-beta.25",
     "next-mdx-remote": "^5.0.0",
     "npm": "^10.9.0",
     "react": "^18",
