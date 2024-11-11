@@ -9,7 +9,16 @@ const authOptions = {
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
     }),
   ],
+  // Other NextAuth options
 };
 
-export const GET = NextAuth(authOptions);
-export const POST = NextAuth(authOptions);
+const handler = NextAuth(authOptions);
+
+export async function GET(request) {
+  return handler(request);
+}
+
+export async function POST(request) {
+  return handler(request);
+}
+
