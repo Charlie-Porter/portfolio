@@ -4,12 +4,15 @@ const technologies = [
   { name: '.Net', imgSrc: 'dotnet.webp' },
   { name: 'SQL', imgSrc: 'sql.png' },
   { name: 'HTML', imgSrc: 'html.png' },
-  { name: 'REACT', imgSrc: 'react.png' },
-  { name: 'JAVASCRIPT', imgSrc: 'js.png' },
+  { name: 'Blazor', imgSrc: 'Blazor.png' },
+  { name: 'React', imgSrc: 'react.png' },
+  { name: 'Javascript', imgSrc: 'js.png' },
   { name: 'CSS', imgSrc: 'css.png' },
   { name: 'GIT', imgSrc: 'git.png' },
-  { name: 'NEXT.JS', imgSrc: 'nextjs.png' },
-  { name: 'NODE.JS', imgSrc: 'node.png' },
+  { name: 'Next.js', imgSrc: 'nextjs.png' },
+  { name: 'Node.js', imgSrc: 'node.png' },
+  { name: 'DevOps', imgSrc: 'DevOps.png' },
+  { name: 'Terraform', imgSrc: 'Terraform.png' },
 ];
 
 const About = () => {
