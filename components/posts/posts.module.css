@@ -29,8 +29,13 @@
 .postTitle {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #63b3ed;
-  /* Light blue color */
+  color: #a0aec0;
+  margin-bottom: 0.25rem;
+}
+
+.postTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
   margin-top: 0.5rem;
 }
 
@@ -40,11 +45,8 @@
 
 .postDescription {
   color: #e2e8f0;
-  /* Light gray for better readability */
   margin-top: 0.5rem;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
-  /* Truncate to 2 lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;

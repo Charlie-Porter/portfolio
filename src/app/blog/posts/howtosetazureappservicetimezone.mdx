@@ -1,0 +1,35 @@
+---
+title: "Change TimeZone on Azure App Service"
+publishedAt: "2024-04-09"
+summary: "TimeZone plays an important role for time crucial  applications. In that case, you must have to set a proper timezone for the running  operating system"
+---
+
+<br />
+Follow these steps to configure the application setting with the correct name
+and value.
+<br />
+
+## Steps to Change TimeZone
+
+1. Log in to the Azure Portal
+2. Open Azure App Service
+3. In the left-hand sidebar, click on **Configuration** under **Settings**.
+4. Click on **+ New Application Setting**.
+5. Set the environment variables based on your OS type:
+   <br />
+
+### For Windows App Service
+
+```
+Name: WEBSITE_TIME_ZONE
+Value: Eastern Standard Time
+```
+
+<br />
+### For Linux App Service
+
+```
+Name: TZ
+Value: America/New_York
+
+```

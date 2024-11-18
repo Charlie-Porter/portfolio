@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
-        <h1 className={styles.title}>Hi, I&apos;m <b>Charlie</b>
+        <h1 className={styles.title}>Hi, I&apos;m <b>Charlie</b>👋
           <span className={styles.profileImage}>
             <Image src={`${prefix}/me.png`}
               alt="Profile Picture"
