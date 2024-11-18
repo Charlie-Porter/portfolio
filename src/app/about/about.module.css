@@ -118,3 +118,47 @@
     width: 100%;
   }
 }
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  justify-items: center;
+}
+
+.skills__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 10px 6px rgba(0, 0, 0, 1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills__item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.skills__item img {
+  max-width: 48px;
+  z-index: 2;
+}
+
+.skills__item-name {
+  font-size: 1px;
+  font-weight: bold;
+  margin-top: 8px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.skills__item::before {
+  content: '';
+  position: absolute;
+}

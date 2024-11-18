@@ -1,4 +1,16 @@
 import styles from './about.module.css'
+import Image from 'next/image';
+const technologies = [
+  { name: '.Net', imgSrc: 'dotnet.webp' },
+  { name: 'SQL', imgSrc: 'sql.png' },
+  { name: 'HTML', imgSrc: 'html.png' },
+  { name: 'REACT', imgSrc: 'react.png' },
+  { name: 'JAVASCRIPT', imgSrc: 'js.png' },
+  { name: 'CSS', imgSrc: 'css.png' },
+  { name: 'GIT', imgSrc: 'git.png' },
+  { name: 'NEXT.JS', imgSrc: 'nextjs.png' },
+  { name: 'NODE.JS', imgSrc: 'node.png' },
+];
 
 const About = () => {
   return (
@@ -23,7 +35,15 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div >
+      <div className={styles.skills}>
+        {technologies.map((tech) => (
+          <div key={tech.name} className={styles.skills__item}>
+            <Image src={tech.imgSrc} alt={tech.name} width={48} height={48} />
+            <div className={styles.skills__item}>{tech.name}</div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 
