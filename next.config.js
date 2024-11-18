@@ -3,8 +3,8 @@
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
-  basePath: isProd ? '/react-portfolio' : '',
-  assetPrefix: isProd ? '/react-portfolio' : '',
+  basePath: isProd ? '/portfolio' : '',
+  assetPrefix: isProd ? '/portfolio' : '',
   output: 'export',
   distDir: 'dist',
   images: {
