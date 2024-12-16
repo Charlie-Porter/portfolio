@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from './contact.module.css';
 
 export const metadata = {
@@ -12,7 +11,7 @@ const ContactPage = () => {
     <div className={styles.container}>
       <div className={styles.text}>
         <h1>Let&apos;s connect ✉️</h1>
-        <p>If you want to know more about me or my work, or if you would just like to say hello, send me a message. I&apos;d love to hear from you 📣</p>
+        <p>If you want to know more about me or my work, or if you would just like to say hello, send me a message. I&apos;d love to hear from you 🗣️📣</p>
       </div>
       <div className={styles.formContainer}>
         <form action="" className={styles.form}>

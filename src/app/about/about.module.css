@@ -1,6 +1,7 @@
 .container {
   display: flex;
   gap: 100px;
+  animation: fadeIn 1.5s ease;
 }
 
 .textContainer {
