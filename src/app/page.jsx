@@ -16,7 +16,7 @@ const Home = () => {
           </span>
         </h1>
         <p className={styles.desc}>
-          I&apos;m an full stack software developer from Northern Ireland. Highly flexible and self-sufficient. Able to overcome any obstacle. 🐙
+          I&apos;m a full stack software developer from Northern Ireland. Highly flexible and self-sufficient. Able to overcome any obstacle. 🐙
         </p>
         <div className={styles.buttons}>
           <a className={styles.button} href="https://github.com/Charlie-Porter">
